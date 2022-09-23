@@ -1,6 +1,6 @@
 package com.example.basic.data.string_class;
 
-class Funktion_trim_stripLeading_stripTrailing {
+class Funktions_trim_stripLeading_stripTrailing {
    public static void main(String args[]) {
 
       String str = "  Hello World   \n   ";
