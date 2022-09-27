@@ -1,6 +1,6 @@
 package com.example.basic.data.string_class;
 
-class Function_length_toLowerCase_toUpperCase_charAt {
+class Functions_length_toLowerCase_toUpperCase_charAt {
 
    public static void main(String args[]) {
 
