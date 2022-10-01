@@ -11,7 +11,7 @@ class StringBuilderExample {
 
       System.out.println(builder.toString()); //Kasia ma psa. Ola ma kota.123 Kolejny tekst
 
-      builder.replace(0,5, "Julia ");
+      builder.replace(0,6, "Julia ");
       System.out.println(builder.toString()); // Julia ma psa. Ola ma kota.123 Kolejny tekst
 
 
