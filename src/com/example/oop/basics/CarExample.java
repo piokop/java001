@@ -1,22 +1,32 @@
 package com.example.oop.basics;
-
 class Car {
    String manufacturer;
    String name;
    int year;
    String color;
    float topSpeed;
-   float masa;
 
-   public void printInfo() {  // metoda
-      
-      System.out.println(this.manufacturer + " "
-                     + this.name + "\n"
-                     + this.year + "\n"
-                     + this.color + "\n"
-                     + this.masa);
+
+   public Car() {
+      this.manufacturer = "unknown";
+//      this.name = "unknown";
+//      this.color = "unknown";
+   }
+   public Car(String manufacturer, String name, int year, String color, float topSpeed) { // *konstruktor
+      this.manufacturer = manufacturer;
+      this.name = name;
+      this.color = color;
+      this.year = year;
+      this.topSpeed = topSpeed;
    }
 
+   public void printInfo() {  // *metoda
+      System.out.println(this.manufacturer + " "
+              + this.name + "\n"
+              + this.year + "\n"
+              + this.color +"\n"
+              + this.topSpeed);
+   }
 }
  public class CarExample {
    public static void main(String args[]) {
@@ -27,7 +37,6 @@ class Car {
       ford.color = "blue";
       ford.year = 1967;
       ford.topSpeed = 200.0f;
-      ford.masa = 2.5f;
       ford.printInfo();
 
       Car chevrolet = new Car(); // nowa instancja, nowy obiekt
@@ -36,7 +45,6 @@ class Car {
       chevrolet.color = "red";
       chevrolet.year = 2020;
       chevrolet.topSpeed = 300.0f;
-      chevrolet.masa = 1.7f;
       chevrolet.printInfo();
 
       Car fiat = new Car();
@@ -45,8 +53,14 @@ class Car {
       fiat.color = "Wiśniowy";
       fiat.year = 1990;
       fiat.topSpeed = 180.0f;
-      fiat.masa = 700.f;
       fiat.printInfo();
+
+
+      Car dodge = new Car("Dodge", "Viper"
+              , 1997, "blue", 270.0f);
+      dodge.printInfo();
+
+
 
 
 
