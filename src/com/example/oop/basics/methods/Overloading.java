@@ -32,12 +32,14 @@ class Overloading {
       MathOverloading math = new MathOverloading();
       int a = 12;
       int b = 3;
-      int c = 9;
-      System.out.println(math.add(a, b, c));
+      System.out.println(math.add(a, b));
 
       float f1 = 10.0f;
       float f2 = 12.0f;
       System.out.println(math.add(f1, f2));
+
+      int c = 5;
+      System.out.println(math.add(a,b,c));
 
       RectangleOverloading rect = new RectangleOverloading();
       System.out.println("rect.side1: " + rect.side1);
@@ -45,12 +47,8 @@ class Overloading {
       RectangleOverloading rect2 = new RectangleOverloading(15.0f);
       System.out.println("rect2.side1: " + rect2.side1);
 
-      RectangleOverloading rect3 = new RectangleOverloading(rect.side1, rect.side2);
-      System.out.println("rect3.side1, side2: " + rect3.side1 + rect3.side2);
-
-
-
-
+      RectangleOverloading rect3 = new RectangleOverloading(f1, f2);
+      System.out.println("rect3.side1, side2: " + rect3.side1 * rect3.side2);
 
    }
 }
